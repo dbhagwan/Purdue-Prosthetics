@@ -54,7 +54,7 @@ void loop()
 
     if (potValue >= 0)
     {
-      myoValue = analogRead(myo); // Reads the value of the potentiometer (value between 0 and 1023)
+      myoValue = analogRead(myoPin); // Reads the value of the potentiometer (value between 0 and 1023)
 
       if (myoValue >= 700 && state == 0)
       {
