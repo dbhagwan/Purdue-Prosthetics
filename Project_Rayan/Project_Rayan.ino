@@ -23,7 +23,6 @@ int threshold = 700; // Threshold value of the Myoelectric sesnor
 
 void reset()
 {
-  digitalWrite(LED, LOW);
   
   // Sets actuators to a default relaxed position
   servo1.write(myoValue);
@@ -40,7 +39,6 @@ void setup()
   servo2.attach(servoPin2); // Actuator 2 to pin 10
   servo3.attach(servoPin3);  // Actuator 3 to pin 11
 
-  pinMode(LED, OUTPUT);
 
   Serial.begin(9600);
 }
@@ -58,7 +56,6 @@ void loop()
         
       if (myoValue >= threshold && state == 0)
       {
-        digitalWrite(LED, HIGH);
         for (int i = 0; i < 360; i++)
         {
           servo1.write(i);
