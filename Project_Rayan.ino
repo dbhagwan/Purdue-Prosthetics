@@ -20,14 +20,12 @@ int buttonState = 0; // State of the button
 int state = 0;
 int threshold = 700; // Threshold value of the Myoelectric sesnor
 
-const int LED = 13;
 
 void reset()
 {
   digitalWrite(LED, LOW);
   
   // Sets actuators to a default relaxed position
-  myoValue = 1023;
   servo1.write(myoValue);
   servo2.write(myoValue);
   servo3.write(myoValue);;
@@ -56,8 +54,8 @@ void loop()
 
     if (potValue >= 50)
     {
-     // myoValue = analogRead(myoPin); // Reads the value of the potentiometer (value between 0 and 1023)
-        myoValue  = 20;
+        myoValue = analogRead(myoPin); // Reads the value of the potentiometer (value between 0 and 1023)
+        
       if (myoValue >= threshold && state == 0)
       {
         digitalWrite(LED, HIGH);
