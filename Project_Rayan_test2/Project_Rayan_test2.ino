@@ -81,9 +81,4 @@ void loop()
       }
     }
 
-    else
-    {
-      reset();
-    }
-
 }
