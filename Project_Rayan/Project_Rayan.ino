@@ -14,7 +14,7 @@ const int servoPin1 = 9; // Input pin of linear actuator 1
 const int servoPin2 = 10; // Input pin of linear actuator 2
 const int servoPin3 = 11; // Input pin of linear actuator 3
 int potValue = 0; // Value read from the potentiometer
-int myoValue = 0; // Value read from the Myoelectic sensor
+int myoValue; // Value read from the Myoelectic sensor
 int outputValue = 0; // Value output to the PWM (analog out)
 int buttonState = 0; // State of the button
 int state = 0;
