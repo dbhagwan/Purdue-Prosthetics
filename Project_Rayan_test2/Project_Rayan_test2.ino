@@ -9,7 +9,6 @@ Servo servo3; // Linear Actuator 3
 const int buttonPin = 7; // Digital pin connected to pushbutton 
 const int potPin = A0; // Analog pin connected to potentiometer 
 const int myoPin = A5; // Analog pin connected to Myoelectic sensor 
-const int analogOutPin = 3; // Analog output pin connected to output
 const int servoPin1 = 9; // Input pin of linear actuator 1
 const int servoPin2 = 10; // Input pin of linear actuator 2
 const int servoPin3 = 11; // Input pin of linear actuator 3
